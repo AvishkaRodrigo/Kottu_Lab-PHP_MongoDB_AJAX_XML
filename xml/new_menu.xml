@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <name>Chicken Kottu Rice</name>
+    <price>11000</price>
+    <type>Kottu Rice</type>
+    <description>Devilled Chicken with Wok-fried Basmati Rice, chili paste, and a fried egg.</description>
+  </item>
+  <item>
+    <name>Egg Kottu Rice</name>
+    <price>900</price>
+    <type>Kottu Rice</type>
+    <description>Wok fried Basmati Rice served with batter-fried mushrooms, chili paste, and a fried egg</description>
+  </item>
+  <item>
+    <name>Mutton Babath Pittu Kottu</name>
+    <price>2000</price>
+    <type>KL Inventions</type>
+    <description>The infamous Mutton Babath curry prepared with Pittu (rice flour)</description>
+  </item>
+  <item>
+    <name>String Hopper Kottu with Kiri Maalu</name>
+    <price>1200</price>
+    <type>KL Inventions</type>
+    <description>The rare yet perfect combination of string hopper Kottu with the beloved Kiri Maalu curry.</description>
+  </item>
+  <item>
+    <name>Low Carb Seafood Kottu</name>
+    <price>1500</price>
+    <type>KL Inventions</type>
+    <description>No Rotti! Prepared with an assortment of fresh veggies and delicious seafood that's grilled to perfection!</description>
+  </item>
+  <item>
+    <name>Prawn Pasta Kottu with Cheese</name>
+    <price>1600</price>
+    <type>KL Inventions</type>
+    <description>It&#x2019;s not just any pasta dish, this is a pasta kottu made with delicious Lankan style fried Prawns  and creamy Cheese!</description>
+  </item>
+  <item>
+    <name>Devilled Prawn</name>
+    <price>1900</price>
+    <type>Devilled Dishes</type>
+    <description>Lankan style devilled prawns with stir-fried capsicums, tomatoes, onions, and spices. (250 grams)</description>
+  </item>
+  <item>
+    <name>Devilled Cuttlefish</name>
+    <price>1350</price>
+    <type>Devilled Dishes</type>
+    <description>Lankan style devilled Cuttlefish with stir-fried capsicums, tomatoes, onions, and spices. (250 grams)</description>
+  </item>
+  <item>
+    <name>Devilled Chicken</name>
+    <price>1300</price>
+    <type>Devilled Dishes</type>
+    <description>Lankan style devilled Chicken with stir-fried capsicums, tomatoes, onions, and spices. (250 grams)</description>
+  </item>
+  <item>
+    <name>sadasdasd</name>
+    <price>123456</price>
+    <type>Kottu Rice</type>
+    <description>ascascds</description>
+  </item>
+</menu>

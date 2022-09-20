@@ -14,6 +14,8 @@
         
         if($table->insertOne($doc)){
             echo "data inserted";
+            echo "<xmp>".$table->saveXML()."</xmp>";
+            $table->save("newMenu.xml")or die ("Error, Unable to create file");
         }else{
             echo "error";
 

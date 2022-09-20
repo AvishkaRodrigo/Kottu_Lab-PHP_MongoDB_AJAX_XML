@@ -10,11 +10,11 @@
 <body>
 
   <?php
-    use MongoDB\Operation\InsertOne;
     require 'xmlLoader.php';
+    require 'generateXML.php';
   ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand ps-4" href="#">Kottu Labs</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,11 @@
     </div>
   </nav>
 
-
   <div class="content ps-5 d-flex">
-    <div id="display-menu"  class="col-8">
+  
+    <div id="display-menu"  class="col-8 overflow-scroll">
       Loading...A
+      
     </div>
     
     <div class="form-area col m-3">
@@ -63,9 +64,11 @@
           <div class="d-flex justify-content-center">
             <button class="btn btn-dark submit" id="submit" type="button" onclick="addData()">Add item</button>
           </div>
+          
       </form>
     
-      <div id="result">
+      <div class="d-flex justify-content-center mt-5">
+        <button class="btn btn-light submit" type="button" onclick="generateMenuXML()">Download Menu</button>
       </div>
     </div>
   </div>
@@ -73,19 +76,15 @@
 
   <script>
     function addData () {
-          event.preventDefault();
-          
-          var data = new FormData();
-          data.append('name', document.getElementById("name").value);
-          data.append('price', document.getElementById("price").value);
-          data.append('type', document.getElementById("type").value);
-          data.append('description', document.getElementById("description").value);
-
+        event.preventDefault();
+        
+        var data = new FormData();
+        data.append('name', document.getElementById("name").value);
+        data.append('price', document.getElementById("price").value);
+        data.append('type', document.getElementById("type").value);
+        data.append('description', document.getElementById("description").value);
           
         const xhttp = new XMLHttpRequest();
-        // xhttp.onload = function() {
-        //   document.getElementById('result').innerHTML = document.getElementById("name").value;
-        // };
         xhttp.open("POST", "insertData.php", true);
         xhttp.send(data);
         showMenu();
@@ -94,10 +93,7 @@
 
 
     function showMenu() {
-        // event.preventDefault()
-        
-        // document.getElementById("display-menu").innerHTML = "Loading...0s";
-
+      
       const xhttp = new XMLHttpRequest();
       xhttp.onload = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -110,11 +106,14 @@
       return this.responseText; 
     }
     document.getElementById("display-menu").innerHTML = showMenu() || "Loading...";
+    
     function clearData() {
       document.getElementById("name").value = "";
       document.getElementById("price").value = "";
       document.getElementById("type").value = "";
       document.getElementById("description").value = "";
     }
-  </script>
+
+    </script>
+
 </html>

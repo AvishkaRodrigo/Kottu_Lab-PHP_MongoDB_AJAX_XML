@@ -11,8 +11,6 @@
         <description>Wok fried Basmati Rice served with batter-fried mushrooms, chili paste, and a fried egg</description>
         <type>Kottu Rice</type>
     </item>
-
-
     <item>
         <name>Mutton Babath Pittu Kottu</name>
         <price>2000</price>
@@ -37,8 +35,6 @@
         <description>It’s not just any pasta dish, this is a pasta kottu made with delicious Lankan style fried Prawns  and creamy Cheese!</description>
         <type>KL Inventions</type>
     </item>
-
-
     <item>
         <name>Devilled Prawn</name>
         <price>1900</price>
@@ -57,5 +53,4 @@
         <description>Lankan style devilled Chicken with stir-fried capsicums, tomatoes, onions, and spices. (250 grams)</description>
         <type>Devilled Dishes</type>
     </item>
-
 </menu>

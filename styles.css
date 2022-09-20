@@ -1,16 +1,16 @@
-*{
+th, td, label{
     color: #fff;
 }
 body {
     background: url('./Assets/bgImage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
- 
-    /* position: fixed; */
-    /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
 }
 
 .content{
-    background-color: rgba(0, 0, 0, 0.44);
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.display-menu{
+    height: 91vh;
 }
